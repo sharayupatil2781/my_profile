@@ -11,9 +11,13 @@
 
       .summary {
         font-size: large;
-        padding-left: 30px;
+        /* padding-left: 30px; */
         /* margin: 30px; */
-        margin: 20px 50px;
+        /* margin: 20px 50px; */
+
+        padding: 30px;
+        width: 200px;
+        box-sizing: content-box;
       }
 
       .project {
@@ -25,12 +29,40 @@
         padding-right: 40px; */
 
         /* padding: 40px; */
-        padding: 40px 10px;
+        /* padding: 40px 10px; */
+
+        padding: 30px;
+        width: 200px;
+        box-sizing: border-box;
+      }
+
+      #one {
+        font-size: 30px;
+      }
+
+      #two {
+        font-size: 30px;
+      }
+
+      #para1 {
+        font-size: 2em;
+      }
+
+      #para2 {
+        font-size: 2rem;
       }
     </style>
   </head>
   <body>
-    <p class="summary">Professional Summary</p>
+    <p class="summary">Project Section</p>
     <p class="project">Project Section</p>
+
+    <div id="one">
+      <p id="para1">Paragraph one</p>
+    </div>
+
+    <div id="two">
+      <p id="para2">Paragraph two</p>
+    </div>
   </body>
 </html>
