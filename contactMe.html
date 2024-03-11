@@ -4,6 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me</title>
+
+    <style>
+      label,
+      button {
+        font-size: large;
+        color: crimson;
+        /* font-weight: bold;*/
+      }
+
+      /* attribute selector */
+      input[type="text"],
+      input[type="email"] {
+        border: 2px solid cornflowerblue;
+        padding: 5px 5px;
+        border-radius: 8px;
+        width: 250px;
+        text-transform: capitalize;
+        color: green;
+      }
+
+      input[type="email"] {
+        text-transform: lowercase;
+      }
+
+      /* 
+      //can use class and id selector also
+      .fullname {
+        border: 2px solid cornflowerblue;
+        padding: 5px 5px;
+        border-radius: 8px;
+        width: 250px;
+        text-transform: capitalize;
+        color: green;
+      } */
+
+      button[type="submit"]:hover {
+        color: darkblue;
+        border-radius: 8px;
+        border: 2px solid forestgreen;
+      }
+
+      button[type="submit"]:focus {
+        color: chartreuse;
+        border: dotted;
+      }
+
+      /* //can use class and id selector also
+      .submit:hover {
+        color: darkblue;
+      } */
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h2>Contact Me</h2>
+
+    <form>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <label for="">Full Name</label>
+            </td>
+            <td><input type="text" class="fullname" /><br /></td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="">Email</label>
+            </td>
+            <td><input type="email" /><br /></td>
+          </tr>
+
+          <tr>
+            <td><label for="">Question</label></td>
+            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+          </tr>
+
+          <tr>
+            <td><button type="submit" class="submit">Send Question</button></td>
+            <td><button type="reset">Clear Info</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
 </html>

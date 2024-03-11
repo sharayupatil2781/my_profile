@@ -93,7 +93,7 @@
       }
 
       li {
-        padding-top: 20px;
+        /* padding-top: 20px; */
         font-family: "Poppins", sans-serif;
       }
 
@@ -132,13 +132,47 @@
         font-family: "Poppins", sans-serif;
       }
 
+      .Paragraph::selection {
+        background-color: hotpink;
+      }
       footer {
         font-family: "Poppins", sans-serif;
+      }
+
+      .listsummary li {
+        /* list-style-type: square; */
+        list-style-type: none;
+      }
+
+      .listsummary li::marker {
+        content: ✍️;
+        /* list-style-type: square; */
+      }
+
+      .roles {
+        list-style-type: lower-alpha;
+      }
+
+      .roles li {
+        /* padding-top: 1.5rem; */
+        padding-top: 20px;
+        background-color: rgb(233, 137, 102);
+      }
+
+      .temp li {
+        color: blue;
+        list-style-type: none;
+        content: ✍️;
       }
     </style>
   </head>
   <body>
     <!-- Header Section -->
+
+    <ul class="temp">
+      <li>hi</li>
+      <li>hello</li>
+    </ul>
     <header class="header">
       <i class="fa fa-user fa-lg" aria-hidden="true"></i>
       <span class="header-info">Sharayu Patil </span>
@@ -272,7 +306,7 @@
         </p>
 
         <p class="Paragraph"><strong>Roles and Responsibilities:</strong></p>
-        <ul>
+        <ol class="roles">
           <li>
             Designed and Implemented the user interface using HTML5 and CSS3
           </li>
@@ -285,7 +319,7 @@
             stand up calls, sprint retrospective meetings
           </li>
           <li>involved in fixing technical issues in production environment</li>
-        </ul>
+        </ol>
       </section>
       <hr />
       <!-- Education Section -->
